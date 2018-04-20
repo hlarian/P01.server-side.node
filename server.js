@@ -15,7 +15,7 @@ function onReq(req,res) {
 
     });
 }
-http.createServer(onReq).listen(8080);
+http.createServer(onReq).listen(8000);
 
 // Console will print the message
-console.log('Server running at http://127.0.0.1:8080/index.html');
+console.log('Server running at http://127.0.0.1:8000/index.html');
