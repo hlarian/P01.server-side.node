@@ -8,6 +8,9 @@ var fs = require('fs');
 function onReq(req,res) {
 
     fs.readFile('index.html', function (err, data) {
+        if (err){
+            console.log(err.toString());
+        }
         res.writeHead(200, {'Content-Type': 'text/html'});
         res.write(data + dt.myDateTime());
         res.end();
