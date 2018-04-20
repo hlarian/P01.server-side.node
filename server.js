@@ -1,8 +1,6 @@
 var http = require("http");
 var dt = require('./DateModule');
-var url = require('url');
 var fs = require('fs');
-//var formidable = require('C:/Users/AssAssiN/node_modules/formidable');
 
 
 function onReq(req,res) {
@@ -17,7 +15,7 @@ function onReq(req,res) {
 
     });
 }
-http.createServer(onReq).listen(80);
+http.createServer(onReq).listen(8080);
 
 // Console will print the message
-console.log('Server running at http://127.0.0.1/index.html');
+console.log('Server running at http://127.0.0.1:8080/index.html');
