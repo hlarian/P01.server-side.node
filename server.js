@@ -9,8 +9,8 @@ function onReq(req,res) {
         if (err){
             console.log(err.toString());
         }
-        res.writeHead(200, {'Content-Type': 'text/html'});
-        res.write(data + dt.myDateTime());
+        res.writeHead(200, {'Content-Type':'text/html'});
+        res.write('Mahdi and Habib' + data + dt.myDateTime());
         res.end();
 
     });
